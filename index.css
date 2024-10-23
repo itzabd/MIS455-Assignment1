@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2E5BF;
+    color: #257180;
+    padding: 20px;
+}
+
+header {
+    background-color: #257180;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #257180;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #F2E5BF;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #FD8B51;
+    border-radius: 5px;
+}
+
+.main-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.tour-spot h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #CB6040;
+    font-size: 28px;
+}
+
+.outer {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.inner {
+    text-align: center;
+}
+
+.inner img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #257180;
+}
+
+.inner img:hover {
+    border-color: #CB6040;
+}
+
+.inner p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #257180;
+}
