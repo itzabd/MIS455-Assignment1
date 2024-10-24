@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #D1E9F6;
+    background-color: #D1E9F6; 
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #f0843c;
+    background-color: #f0843c; 
     padding: 15px 0;
     border-bottom: 3px solid #000000;
 }
@@ -56,41 +56,51 @@ header {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Flexbox Layout */
 .outer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    display: flex; /* Flex layout for horizontal alignment */
+    flex-wrap: wrap; /* Wrap elements if screen width is too small */
+    justify-content: space-around; 
     padding: 20px;
 }
 
 .inner {
-    text-align: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 20px;
+    max-width: 500px; /* Card size */
+    text-align: center;
+    flex: 1 1 300px; 
 }
 
 .inner img {
     width: 100%;
     height: auto;
-    border: 4px solid rgb(80, 79, 77);
+    border: 4px solid rgb(80, 79, 77); 
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.inner h3 {
+    font-size: 24px;
+    color: #CB6040; 
+    margin-bottom: 10px;
 }
 
 .inner p {
     margin-top: 10px;
     font-size: 16px;
-    color: #257180;
-    font-family: 'Arial', sans-serif;
+    color: #257180; 
     line-height: 1.5;
-    text-align: justify;
     padding: 10px;
     background-color: #E9F7FD;
     border-radius: 5px;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); 
+    text-align: justify;
 }
+
 .inner img:hover {
-    border-color: #FF6600; 
+    border-color: #FF6600;
 }
